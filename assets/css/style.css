@@ -402,7 +402,7 @@ body {
   background-color: var(--independence);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: top center;
+  background-position: center;
   padding: 120px 20px;
   border-radius: var(--radius-20);
   font-family: var(--ff-barlow);
