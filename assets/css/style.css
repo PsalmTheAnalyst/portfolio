@@ -401,8 +401,8 @@ body {
 .portfolio-card {
   background-color: var(--independence);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top right;
+  background-size: fill;
+  background-position: top center;
   padding: 120px 20px;
   border-radius: var(--radius-20);
   font-family: var(--ff-barlow);
