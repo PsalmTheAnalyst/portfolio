@@ -437,6 +437,117 @@ body {
 }
 
 
+<!-- Append this to your ./assets/css/style.css -->
+<style>
+/* Portfolio Section Background */
+.section.portfolio {
+  background-image: url('./assets/images/portfolio-bg.jpg');
+  background-size: cover; /* Scales image to cover section, may crop */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents tiling */
+  position: relative;
+  padding: 4rem 0; /* Matches existing section padding */
+}
+
+/* Overlay for text readability */
+.section.portfolio::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  z-index: 1;
+}
+
+/* Ensure content is above overlay */
+.section.portfolio .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Portfolio List as Grid */
+.portfolio-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Portfolio Card Styles */
+.portfolio-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff; /* White background for cards to match site aesthetic */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none; /* Remove underline from link */
+}
+
+.portfolio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Portfolio Image */
+.portfolio-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Ensures image scales without distortion */
+}
+
+/* Card Content */
+.card-content {
+  padding: 1.5rem;
+  color: #333; /* Dark text for contrast on white background */
+}
+
+.card-subtitle {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.h3.card-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #2c3e50; /* Matches site’s dark aesthetic */
+}
+
+.btn-link {
+  display: inline-flex;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9rem;
+  color: #007bff; /* Matches .btn-primary blue */
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.btn-link:hover {
+  color: #0056b3; /* Darker blue on hover */
+}
+
+.btn-link ion-icon {
+  margin-left: 0.5rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .portfolio-list {
+    grid-template-columns: 1fr; /* Single column on mobile */
+  }
+  .section.portfolio {
+    padding: 2rem 0; /* Reduced padding for mobile */
+  }
+}
+</style>
 
 
 
