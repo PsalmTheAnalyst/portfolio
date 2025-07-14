@@ -1,6 +1,7 @@
 <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" fill="none"/> <!-- Transparent background -->
-  <text x="50%" y="50%" font-family="Poppins, Arial Black, sans-serif" font-size="8" fill="white" text-anchor="middle" dominant-baseline="middle" letter-spacing="0.5" font-weight="600">
-    Psalm
+  <rect width="32" height="32" fill="none"/> <!-- Transparent overall background -->
+  <rect x="4" y="4" width="24" height="24" rx="4" fill="#4d4bdf"/> <!-- Blue box with rounded corners -->
+  <text x="50%" y="50%" font-family="Poppins, Arial Black, sans-serif" font-size="8" fill="white" text-anchor="middle" dominant-baseline="middle" font-weight="600">
+    psalm
   </text>
 </svg>
