@@ -1,6 +1,6 @@
 <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <circle cx="16" cy="16" r="16" fill="#4d4bdf"/> <!-- Solid #4d4bdf circle -->
-  <text x="50%" y="50%" font-family="Poppins, Arial Black, sans-serif" font-size="8" fill="white" text-anchor="middle" dominant-baseline="middle" letter-spacing="0.5" font-weight="600">
-    psalm
+  <circle cx="16" cy="16" r="16" fill="#4d4bdf"/> <!-- Solid #4d4bdf circle, no transparency -->
+  <text x="50%" y="50%" font-family="Poppins, Arial Black, sans-serif" font-size="10" fill="white" text-anchor="middle" dominant-baseline="middle" letter-spacing="0.5" font-weight="600">
+    Psalm
   </text>
 </svg>
