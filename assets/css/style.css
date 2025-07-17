@@ -396,31 +396,44 @@ body {
 .portfolio-list {
   display: grid;
   gap: 60px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .portfolio-card {
-  background-color: var(--independence);
+  background-color: #2b2d42; /* Fallback for --independence */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
   padding: 120px 20px;
-  border-radius: var(--radius-20);
-  font-family: var(--ff-barlow);
-  color: var(--white);
-  font-weight: var(--fw-600);
-  transition: var(--transition-2);
+  border-radius: 20px; /* Fallback for --radius-20 */
+  font-family: "Barlow", sans-serif; /* Fallback for --ff-barlow */
+  color: #ffffff; /* Fallback for --white */
+  font-weight: 600; /* Fallback for --fw-600 */
+  transition: all 0.3s ease; /* Fallback for --transition-2 */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Ensure content starts at the left */
+  justify-content: flex-start;
 }
 
 .portfolio-list > li .card-content {
-  margin-inline-start: 0; /* Reset any rightward push */
-  text-align: left; /* Ensure text aligns to the left */
-  max-width: 100%; /* Prevent content from being constrained */
+  margin: 0 !important; /* Reset all margins */
+  padding: 0; /* Reset padding to avoid offsets */
+  text-align: left !important; /* Force left text alignment */
+  align-self: flex-start; /* Ensure content sticks to the left */
+  width: auto; /* Prevent width constraints */
+  max-width: 100%;
 }
 
 /* Explicitly override for even-numbered items */
-.portfolio-list > li:nth-child(even) .card-content {
-  margin-inline-start: 0; /* Ensure no rightward push */
-  text-align: left;
+.portfolio-list > li:nth-child(n) .card-content {
+  margin-inline-start: 0 !important;
+  margin-left: 0 !important;
+  text-align: left !important;
+  align-self: flex-start !important;
 }
 .portfolio-card .card-subtitle {
   color: var(--orange-soda);
