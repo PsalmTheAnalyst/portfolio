@@ -396,6 +396,7 @@ body {
 .portfolio-list {
   display: grid;
   gap: 60px;
+  grid-template-columns: repeat(2, 1fr); /* Creates two equal columns */
 }
 
 .portfolio-card {
@@ -411,7 +412,7 @@ body {
   transition: var(--transition-2);
 }
 
-.portfolio-list > li:nth-child(even) .card-content { margin-inline-start: auto; }
+.portfolio-list > li:nth-child(even) .card-content { margin-inline-start: 0; }
 
 .portfolio-card .card-subtitle {
   color: var(--orange-soda);
