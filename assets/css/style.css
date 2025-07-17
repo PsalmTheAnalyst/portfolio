@@ -412,7 +412,15 @@ body {
 }
 
 .portfolio-list > li .card-content {
-  margin-inline-start: 0; /* Ensures text aligns to the left for all cards */
+  margin-inline-start: 0; /* Reset any rightward push */
+  text-align: left; /* Ensure text aligns to the left */
+  max-width: 100%; /* Prevent content from being constrained */
+}
+
+/* Explicitly override for even-numbered items */
+.portfolio-list > li:nth-child(even) .card-content {
+  margin-inline-start: 0; /* Ensure no rightward push */
+  text-align: left;
 }
 .portfolio-card .card-subtitle {
   color: var(--orange-soda);
